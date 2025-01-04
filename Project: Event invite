@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Dancing+Script:wght@400..700&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+                
+
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body {
+                text-align: center;
+                padding: 15px;
+                border: 1px solid lightgray;
+                width: 820px; 
+                height: 825px; 
+
+            }
+
+            div.pic1 {
+            border: 2px solid #ccc;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 600px;
+            height: 200px;
+            object-fit: cover;
+            opacity: 0.3;
+            z-index: 1;
+            }
+
+            div.pic2 {
+            border: 2px solid #ccc;
+            position: absolute;
+            top: 20px;
+            left: 640px;
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            opacity: 0.3;
+            z-index: 2;
+            }
+
+            div.pic3 {
+            border: 2px solid #ccc;
+            position: absolute;
+            bottom: -200px;
+            left: 240px;
+            width: 600px;
+            height: 200px;
+            object-fit: cover;
+            opacity: 0.3;
+            z-index: 3;
+            }
+
+            div.pic4 {
+            border: 2px solid #ccc;
+            position: absolute;
+            bottom: 0px;
+            left: 20px;
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: 50% 100%;
+            opacity: 0.3;
+            z-index: 4;
+            }
+            
+            div.txthd {
+            border: 2px solid #edecec;
+            position: absolute;
+            background-color: rgb(249, 246, 243);
+            top: 240px;
+            left: 240px;
+            width: 380px;
+            height: 380px;
+            font-size: 13px;
+            color: rgb(85, 53, 7);
+
+            z-index: 5;
+            }
+
+            h1 {
+            position: absolute;
+            top: -180PX;
+            left: 10px;
+            color: #ffffff;
+            font-size: 50px;
+
+
+
+            }
+
+            h2 {
+            position: absolute;
+            top: -180PX;
+            left: 10px;
+            color: #ffffff;
+            font-size: 20px;
+            }
+            
+            h3 {
+            position: absolute;
+            top: -110PX;
+            left: 150px;
+            color: #ffffff;
+            font-size: 20px;
+
+            }
+
+            h4 {
+            position: absolute;
+            top: -10PX;
+            left: 0px;
+            color: rgb(85, 53, 7);
+            font-size: 18px;
+            }
+
+            .desc {
+            position: absolute;
+            top: 115PX;
+            left: 60px;
+            color: rgb(85, 53, 7);
+            font-size: 15px;
+            line-height: 20px;   
+            }
+
+            div.vendate1 {
+            position: absolute;
+            top: 65px;
+            left: 40px;
+            color: rgb(85, 53, 7);
+            font-size: 15px;
+            text-align: right;
+            line-height: 20px;     
+            }
+
+
+            div.vendate3 {
+            position: absolute;
+            top: 65px;
+            right: 40px;
+            color: rgb(85, 53, 7);
+            font-size: 15px;
+            text-align: left;
+            line-height: 20px;  
+   
+            }
+
+
+            div.vendate2 {
+            position: absolute;
+            top: 60px;
+            left: 130px;
+            color: rgb(85, 53, 7);
+            font-size: 40px; 
+    
+            }
+
+
+            div.pic1:hover {
+            opacity: 0.7;
+            }
+
+            div.pic2:hover {
+            opacity: 0.7;
+
+            }
+
+            div.pic3:hover {
+            opacity: 0.7;
+
+            }
+
+            div.pic4:hover {
+            opacity: 0.7;
+            }
+
+            #fnamelbl {
+            position: absolute;
+            top: 270PX;
+            left: 20px;  
+            }
+
+            #nametxt{
+            position: absolute;
+            width: 65%;
+            top: 265PX;
+            left: 90px;                
+            }
+
+            #lnamelbl {
+            position: absolute;
+            top: 300PX;
+            left: 20px;  
+            }
+
+            #lnametxt{
+            position: absolute;
+            width: 65%;
+            top: 295PX;
+            left: 90px;                
+            }
+
+            #resetbtn {
+            position: absolute;
+            top: 325px;
+            left: 85px;
+            width: 20%;
+            }
+
+            #submitbtn {
+            position: absolute;
+            top: 325px;
+            right: 85px;
+            width: 20%;
+            }
+            
+
+
+            input[type=submit], input[type=reset] {
+            background-color: #ffffff;
+            border: none;
+            color: rgb(85, 53, 7);
+            padding: 10px 16px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="pic1">
+            <a target="_blank" href=" ">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sapin_Noel_Geant_Gubbio_2014.jpg/1920px-Sapin_Noel_Geant_Gubbio_2014.jpg" alt="Northern Lights" width="600" height="200">
+            </a>
+        </div>
+
+        <div class="pic2">
+            <a target="_blank" href=" ">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Julemiddag.jpg" alt="Northern Lights" width="200" height="600">
+            </a>
+        </div>
+
+        <div class="pic3">
+            <a target="_blank" href=" ">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Panettone_-_Nicolettone_2017_-_IMG_7085_%2831752542285%29.jpg/1280px-Panettone_-_Nicolettone_2017_-_IMG_7085_%2831752542285%29.jpg" alt="Northern Lights"   width="600" height="200">
+            </a>
+        </div>
+
+        <div class="pic4">
+            <a target="_blank" href=" ">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Christmas_pudding_%28Heston_from_Waitrose%29_flaming.jpg/800px-Christmas_pudding_%28Heston_from_Waitrose%29_flaming.jpg" 
+              alt="Northern Lights"  width="200" height="600">
+            </a>
+        </div>
+
+        <div class="txthd">
+            <h1>WONDERFUL</h1>
+            <h2>IT'S THE MOST</h2>
+            <h3>TIME OF THE YEAR</h3>
+            <h4>PLEASE JOIN US FOR ARE ANNUAL DINNER PARTY</h4>
+            
+            <div class="vendate1">SATURDAY<br> 7.00PM </div>
+            <div class="vendate2"><STRONG>| 18th |</STRONG></div>
+            <div class="vendate3">DECEMBER<br> 2024</div>
+
+            <div class="desc">
+                <div class="address"><p> THE POST HOUSE INN HOTEL <br>| 250 HOILDAY DRIVE  | PERRY BARR |<br> BIRMINGHAM | BA1 9TB</p></div>
+
+                <div class="rsvp"><p>PLEASE RSVP BY DECEMBER 15TH <br> CALL or TEXT PAMLER | 0220 ~ 2424715 </p></div>
+            </div> 
+            
+            
+            <form>
+                <label id="fnamelbl"  for="fname">First Name</label>
+                <input id="nametxt" type="text" id="fname" name="fname">
+
+                <label  id="lnamelbl" for="lname">Last Name</label>
+                <input  id="lnametxt" type="text" id="lname" name="lname">
+
+                <input id="resetbtn" type="reset" value="Reset">
+                <input id="submitbtn" type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
