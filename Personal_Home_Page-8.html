@@ -1,0 +1,670 @@
+<!-- =================
+  WRITE YOUR HTML HERE
+
+You only need to write the HTML that goes inside the <body> tag. To add things to the <head>, click the ⚙️ 
+   ===================
+-->
+
+<!--- All the tests are red! You have to make them green. 
+
+Q How do you make the tests pass?
+A Meet the requirements!
+
+Make the first test pass by adding a <header> </header>-->
+
+<!DOCTYPE html>
+<html>
+  <header> 
+    <head>
+        <meta charset="utf-8">
+      <title>Personal Home Page </title>
+      <style>
+
+        body {
+          
+          font-family: "Raleway", sans-serif;
+          color: #3d3910;
+        }
+
+        /* ---------------------------- */
+        /* ------- paragraph txt  ----- */
+        /* ---------------------------- */
+        p {
+            
+            font-family: "Raleway", sans-serif;
+            font-size: 16px;
+            padding: 10px 80px 10px 80px;
+            margin: 0px;
+        }
+
+        h1 {
+            color: white;
+            background-color: white;
+            padding: 0%;
+            margin: 0px;
+        }
+
+
+        /* -----------------------*/
+        /* ------- Nav Bar  ----- */
+        /* -----------------------*/
+        #navbar {
+          padding: 25px 0px 5px 20px;
+          margin: 0px 0px 20px 0px;
+          font-weight: bold;
+          font-size: 14px;
+          color: lightgray;
+        }
+
+        
+
+        /* ------- sub headings  ----- */
+        h4 {
+           
+          padding: 10px 0px 10px 40px;
+          font-weight: bold;
+          font-size: 18px;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            padding: 10px 20px 10px 20px;
+            border: 1px solid rgb(154, 153, 153);
+            margin: 5px 0px 5px 0px;
+            color: rgb(154, 153, 153);
+        }
+
+
+        .fnamelbl, .lnamelbl {
+            display: flex;
+            align-items: center;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 0px 20px 10px;  
+        }
+
+
+        .nametext, .Inametext {
+          width: 100%;
+          display: block;
+         
+        }
+
+        /* --------------------*/
+        /* --- SKILLS  txt --- */
+        /* --------------------*/
+        .skillhd {
+          padding-left: 90px;
+          padding-right: 89%;
+          font-size: 16px;
+        }
+
+        /* ----------------------*/
+        /* --- SKILLS  graph --- */
+        /* ----------------------*/
+        .percetage-grey {
+            border: 1px solid darkgray;
+            padding: 2px 2px 2px 2px;
+            background-color: rgb(158, 157, 157);
+            width: 86%;
+            text-align: left;
+            color: white;
+            font-size: 12px;
+            text-align: start;
+            margin-top: 2px;
+            margin-left: 90px;
+            
+        }
+
+        /* --- SKILLS  graph color --- */
+        .photoskill {
+            background-color: rgb(53, 53, 53);
+            
+        }
+
+        #headpic1 {
+          
+          margin: 20px 0px 10px 0px;
+          width: 100%;
+          
+        }
+
+        /* ---------------------------*/
+        /* ---- gallery pictures -----*/
+        /* ---------------------------*/
+        div.gallery {
+          border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        .responsive {
+          padding: 0 6px;
+          float: left;
+          width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* ------------------------------------- */
+        /* ----------- CONTACT INFO ------------ */
+        /* ------------------------------------- */
+        
+         body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 14px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 6px;
+          resize: vertical;
+        }
+
+        input[type=submit] {
+          background-color: #878987;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+        }
+
+        input[type=submit]:hover {
+          background-color: #c9c9c9;
+           
+        }
+
+        .container {
+          border-radius: 20px;
+          background-color: #f2f2f2;
+          padding: 100px;
+          margin: 100px 100px 50px 100px;
+        }
+
+         /* --------- CONTACT INFO END ---------- */
+
+        
+         /* ------------------------------------ */
+         /* --------- Slideshow  TOP  ---------- */
+         /* ------------------------------------ */
+
+         * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+        border: 2px solid palevioletred;
+        height: 100%;
+        margin: 0;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(253, 252, 252);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(210, 210, 210, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #fffbfb;
+        font-size: 24px;
+        padding: 8px 14px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 24px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+
+         /* ------------------------------------ */
+         /* --------- Slideshow  END  ---------- */
+         /* ------------------------------------ */
+
+
+      </style>
+
+  <div class="c-site-header">
+    <!-- header-->
+  <h1> </h1>
+  </div>
+  
+  <body>
+  
+  <!-- Nav Bar-->
+        <div id="navbar"> 
+          <nav aria-label="Main Site Links." class= ".c-site-header">
+            <ul >
+              <li> <a class="button" href="#home"> Home</a></li>
+              <li> <a class="button" href="#about">About</a></li>
+              <li> <a class="button" href="#skills">Technical Skills</a></li>
+              <li> <a class="button" href="#Port">Portfolio</a></li>
+              <li> <a class="button" href="#con"> Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      <main>
+        
+        <!---------------->
+        <!-- Slideshow  -->
+        <!---------------->
+                
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/Images-Pictures-Projects/clark-tibbs-oqStl2L5oxI-unsplash.jpg?raw=true" style="width:100%"  >
+            <div class="text">Caption Quote</div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/s-Image/sarah-doffman-v9Q-I6rnwQk-unsplash.jpg?raw=true" style="width:100%">
+            <div class="text">Birmingham Shopping Center</div>
+            </div>
+            
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/s-Image/tom-w-mVEhsgCYgww-unsplash.jpg?raw=true" style="width:100%">
+            <div class="text">Birmingham Back Street</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+        <!-------------------->
+        <!-- Slideshow End  -->
+        <!-------------------->
+
+
+        <!-------------------->
+        <!------ ABOUT ------->
+        <!-------------------->
+
+        <h4 id="about" class= ".c-site-header">About</h4> 
+
+        <p> Hi my name is Roger Stewart, ive lived in the West Midlands, specifically Birmingham, 
+            for most of my life. I studied at Sutton College, where I earned my HNC in Graphic Design over two years. 
+            I then pursued further studies at Dunstable College, achieving my HND in Graphic Design. After moving back to Walsall, 
+            I continued my education at Walsall College, completing my HNC and HND in Software Engineering over 
+            two years.</p> 
+            
+            <p>
+            In 2006, I started my ringtone company, Bling Tones, which I ran for two years. In 2008, I launched a software company focused on educational software for children, 
+            covering Key Stages 1 and 2. This venture involved creating over four hundred lessons, designing a logo character, 
+            animating page layouts, and developing a fully functioning e-commerce website. I used tools like Photoshop and Dreamweaver, 
+            which enhanced my skills in Adobe Photoshop, Dreamweaver, Director CS, and coding with HTML and CSS. For this project, 
+            we built an app using Director and linked a database with SQL to allow users to log in and save their personal data, 
+            progress, and status.</p>
+            
+            <p>My hobbies include watching anime and sci-fi movies, playing games, drawing, and game development. 
+            I am also committed to self-improvement and have enrolled in several online courses to enhance my development skills in 
+            C# and VB.NET, as well as Unity 3D. Over my spare time, I have developed more than 30 mini games and apps. My dream is 
+            to create software that people enjoy playing or that can improve their lives. </p>
+
+
+        <!------------------------------->
+        <!------ Technical Skills ------->
+        <!------------------------------->
+     
+           <h4 id="skills">Technical Skills</h4>
+           <!-- Progress bars & Skills -->
+
+           <p class="skillhd"> Photography</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:65%" >65%</div>
+           </div>
+
+           <p class="skillhd"> Web Design</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:35%">35%</div>
+           </div>
+
+           <p class="skillhd"> C#</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:65%">65%</div>
+           </div>
+
+           <p class="skillhd"> VB.NET</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:65%" >65%</div>
+           </div>
+
+           <p class="skillhd"> Java Script</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:45%" >45%</div>
+           </div>
+
+           <p class="skillhd"> UNITY 3D</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:85%" >85%</div>
+           </div>
+
+           <p class="skillhd"> Blender </p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:35%" >35%</div>
+           </div>
+
+           <p class="skillhd"> Photoshop CS</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:85%" >85%</div>
+           </div>
+
+           <p class="skillhd"> Dreamweaver CS</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:80%" >80%</div>
+           </div>
+
+           <p class="skillhd"> HTML 5</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:35%" >35%</div>
+           </div>
+
+           <p class="skillhd"> CSS</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:30%" >30%</div>
+           </div>
+           
+           <p class="skillhd"> VISUAL BASICS</p>
+           <div class="percetage-grey">
+             <div class="photoskill" style="width:85%" >85%</div>
+           </div>
+
+
+           <div class="clearfix"></div>
+           <div style="padding: 20px;"></div>
+
+           <!--------------------->  
+           <!----  PORTFOLIO  ---->  
+           <!---------------------> 
+            
+           <h4 id="Port">Porfolio</h4>
+           <!-- Portfolio - Images -->
+           <p class="skillhd"></p>
+           
+           <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://www.youtube.com/watch?v=ZdP1qP8nfII">
+                <iframe width="100%" height="170px" src="https://www.youtube.com/embed/ZdP1qP8nfII?si=I6TJSc9xt24aoJhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </a>
+              <div class="desc">NFS MOST WANTED 2005 EA-Sports this game is a master peace of gaming it over 20yrs old, One the best racing games ever made.</div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://moonlit-concha-65d1f2.netlify.app/">
+                <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/Images-Pictures-Projects/ScreenShot_20250111004831.png?raw=true" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF website using HTML & CSS</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://spiffy-ganache-e9ad69.netlify.app/">
+                <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/Images-Pictures-Projects/ScreenShot_20250111005308.png?raw=true" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF website using HTML & CSS</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://fabulous-alpaca-bf87c5.netlify.app/">
+                <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/Images-Pictures-Projects/ScreenShot_20250111004555.png?raw=true" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF website using HTML & CSS </div>
+            </div>
+          </div>
+
+          <!-- padding row 2  -->
+          <div class="clearfix"></div>
+          <div style="padding: 20px;"></div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://rds1-git.github.io/rogerstewartdev.github.io/travel.html">
+                <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/Images-Pictures-Projects/ScreenShot_20250111130041.png?raw=true" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF travel website using HTML & CSS</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://rds1-git.github.io/rogerstewartdev.github.io/recipe.html">
+                <img src="https://raw.githubusercontent.com/rds1-git/rogerstewartdev.github.io/refs/heads/main/Images-Pictures-Projects/ScreenShot_20250111002843.png" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF recipe book website using HTML & CSS</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://rds1-git.github.io/rogerstewartdev.github.io/blog.html">
+                <img src="https://raw.githubusercontent.com/rds1-git/rogerstewartdev.github.io/refs/heads/main/Images-Pictures-Projects/ScreenShot_20250111003053.png" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF Dummy Blog Page using HTML & CSS</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://rds1-git.github.io/rogerstewartdev.github.io/Event%20invite.html?fname=&lname=">
+                <img src="https://github.com/rds1-git/rogerstewartdev.github.io/blob/main/Images-Pictures-Projects/ScreenShot_20250111003227.png?raw=true" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">Project CYF christmas invite website using HTML & CSS</div>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <div style="padding:6px;">
+          </div>
+          
+           
+           <!------------------------->  
+           <!----   CONTACT FORM  ---->  
+           <!-------------------------> 
+    
+           <h4 id="con"> Contact</h4>
+           <!--contacts Form -->
+
+           <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div> 
+           
+           <!----------------------------->  
+           <!----   CONTACT FORM  END ---->  
+           <!-----------------------------> 
+    
+           <div style="padding: 60px;"></div>
+           
+
+
+        <footer class="c-site-footer"></footer>
+     </body>
+    </main>
+    </html>
+
+
+
+
+
+
+<!-- Your test console.
+Don't delete!-->
+<aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
+</aside>
